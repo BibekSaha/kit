@@ -1,0 +1,173 @@
+/********** universla style **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /*font-family: "Oxygen", sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  background-color: #382039;
+}
+
+/********** main styling **********/
+
+/* main header*/
+header {
+  padding: 30px;
+  background-color: #200f21;
+  height: 100px;
+}
+
+.main-header {
+  justify-content: space-between;
+  color: white;
+}
+
+.search-form input[type="text"] {
+  padding: 10px 15px;
+  height: 35px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-form input[type="text"]:focus {
+  outline: none;
+  border: 2px #f638dc solid;
+}
+
+.search-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5a3d5c;
+  color: white;
+}
+
+.search-form button:focus {
+    outline: none;
+    background-color: #f638dc;
+}
+
+/* Adding contact style */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.create-contact-section {
+  padding: 30px;
+  color: white;
+  background-color: #5a3d5c;
+}
+
+.create-contact {
+  justify-content: center;
+}
+
+.create-contact i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* contact card styling */
+.contact-card {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 70%;
+  background-color:#7f4a88 ;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+
+.card h3 {
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #4a266a;
+  font-size: 1.5em;
+}
+
+.contact {
+  padding: 7px 10px 7px; /*20px 30px 25px;*/
+}
+
+.contact a {
+  display: block;
+  background-color: #ce89ab; /*#de95ba;*/
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+}
+
+span#uid {
+  display: none;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+/********** layout style **********/
+.container {
+  width: 70%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-header,
+.create-contact,
+.contact-card,
+.contact a {
+  display: flex;
+}
+
+.contact a {
+  justify-content: space-between;
+}
+
+/********** mobile **********/
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+
+  header {
+    height: 150px;
+    text-align: center;
+  }
+
+  .main-heading {
+    margin-bottom: 20px;
+  }
+
+  .main-header {
+    display: block;
+    color: white;
+  }
+
+  button#button {
+    width: 100px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+    margin-top: -5px;
+  }
+
+  .card:first-child {
+    margin-top: 30px;
+  }
+}

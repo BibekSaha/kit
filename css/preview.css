@@ -1,0 +1,38 @@
+.preview {
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #5a3d5c;
+    border-radius: 10px;
+}
+
+.preview p {
+    padding: 25px;
+    /*border-bottom: 0.7px #f638dc solid;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.view {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-trash .edit {
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 100px;
+    }
+
+    .icons {
+        justify-content: space-around;
+    }
+}
