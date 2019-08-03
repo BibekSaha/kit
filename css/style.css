@@ -164,10 +164,9 @@ h3 {
 
   .card {
     margin-bottom: 30px;
-    margin-top: -5px;
   }
 
   .card:first-child {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
